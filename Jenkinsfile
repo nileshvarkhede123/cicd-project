@@ -6,9 +6,9 @@ pipeline {
         GIT_BRANCH = 'main'
         AWS_REGION = 'us-east-1'
         AWS_ACCOUNT_ID = 'your-account-id'
-        ECR_REPO = 'spring-boot-app-repo'   // Exact name for AWS ECR repo
+        ECR_REPO = 'spring-boot-app-repo'   
         IMAGE_NAME = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:latest"
-        DOCKER_HUB_REPO = 'your-dockerhub-username/springboot-app'  // Replace with your DockerHub username
+        DOCKER_HUB_REPO = 'your-dockerhub-username/springboot-app'  
     }
 
     stages {
